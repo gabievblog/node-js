@@ -1,5 +1,5 @@
-const express = require("express");
-const routes = require("./routes");
+import express from "express";
+import routes from "./routes.js";
 
 class App{
     constructor(){
@@ -18,4 +18,4 @@ class App{
 }
 
 
-module.exports =  new App().server; //Exportando a instância do servidor para ser importada em outros arquivos, como o index.js
+export default new App().server; //Exportando a instância do servidor para ser importada em outros arquivos, como o index.js
